@@ -871,8 +871,7 @@ p img {
   flex-direction: column;
 }
 
-.headquarters-box h4,
-p {
+.headquarters-box {
   text-align: center;
 }
 
