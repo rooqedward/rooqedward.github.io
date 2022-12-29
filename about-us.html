@@ -2,23 +2,102 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge>"
-      <meta
-      name="viewport"
-      content="width-device-width, initial-scale=1.0"
-    />
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/queries.css" rel="stylesheet" type="text/css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Fira+Sans"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial scale=1" />
     <title>About Us</title>
   </head>
 
   <body>
     <div class="page-header">
+      <a href="index.html" class="menu-logo"
+        ><img src="images/logo.png" alt="Easy Eddy's Tree Service Logo"
+      /></a>
+
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="history.html">Our History</a>
+        <a href="about-us.html" title="About Us">About Us</a>
+      </nav>
+      <div class="menu-btn">
+        <svg
+          class="icon-mobile-nav"
+          title="menu-outline"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <rect width="256" height="256" fill="none"></rect>
+          <line
+            x1="40"
+            y1="128"
+            x2="216"
+            y2="128"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></line>
+          <line
+            x1="40"
+            y1="64"
+            x2="216"
+            y2="64"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></line>
+          <line
+            x1="40"
+            y1="192"
+            x2="216"
+            y2="192"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></line>
+        </svg>
+        <svg
+          class="icon-mobile-nav"
+          title="close-outline"
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <rect width="256" height="256" fill="none"></rect>
+          <line
+            x1="200"
+            y1="56"
+            x2="56"
+            y2="200"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></line>
+          <line
+            x1="200"
+            y1="200"
+            x2="56"
+            y2="56"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></line>
+        </svg>
+      </div>
       <div class="top-corner">
         <div class="hours-box">
           <div class="hours-outer-box">
@@ -74,14 +153,6 @@
           <a href="tel:815-997-7707" class="phone">815-997-7707</a>
         </div>
       </div>
-
-      <img src="images/logo.png" alt="logo" class="logo" />
-
-      <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="history.html">Our History</a>
-        <a href="about-us.html" title="About Us">About Us</a>
-      </nav>
     </div>
     <div class="skinnybar">
       <p class="veteran">Veteran Owned and Operated</p>
@@ -142,20 +213,29 @@
 
     <div class="page-footer">
       <img
+        class="footer-img-1"
         src="images/winter.trees.jpg"
-        alt="Winter Trees"
-        class="footer-image"
+        alt="winter trees in Northern Illinois"
       />
-      <a href="https://easyeddystrees.com"
-        ><img src="images/logo.png" alt="logo" class="footer-logo"
-      /></a>
-      <div class="footer-menu-box">
-        <a href="#">Home</a>
+      <img
+        class="footer-img-2"
+        src="images/winter.trees.2.jpg"
+        alt="winter trees in Northern Illinois"
+      />
+      <a class="footer-logo-box" href="index.html">
+        <img
+          src="images/logo.png"
+          alt="Easy Eddy's Tree Service Logo"
+          class="footer-logo"
+        />
+      </a>
+      <nav class="footer-menu-box">
+        <a href="index.html">Home</a>
         <a href="/history.html">History</a>
-        <a href="about-us.html" title="About Us">About Us</a>
-      </div>
+        <a href="about-us.html" title="About Us">About Us </a>
+      </nav>
 
-      <nav class="bottom-links">
+      <nav class="bottom-links-box">
         <a href="tel:815-997-7707" class="links">815-997-7707</a>
         <a href="mailto:easyeddy@outlookcom" class="links"
           >easyeddys@outlook.com</a
