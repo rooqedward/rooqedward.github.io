@@ -5,24 +5,30 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link href="styles/queries.css" rel="stylesheet" type="text/css" />
 
+    <link href="styles/about.css" rel="stylesheet" type="text/css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Fira+Sans"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Us</title>
   </head>
 
   <body>
-    <div class="page-header">
+    <header class="page-header">
       <a href="index.html" class="menu-logo"
-        ><img src="images/logo.png" alt="Easy Eddy's Tree Service Logo"
+        ><img
+          src="images/header.footer/logo.png"
+          alt="Easy Eddy's Tree Service Logo"
       /></a>
 
       <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="history.html">Our History</a>
-        <a href="about-us.html" title="About Us">About Us</a>
+        <ul class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">Our History</a></li>
+          <li><a href="about-us.html" title="About Us">About Us</a></li>
+        </ul>
       </nav>
       <div class="menu-btn">
         <svg
@@ -128,7 +134,12 @@
                 stroke-width="16"
               ></polyline>
             </svg>
-            <p class="phone-hours">Open 7am-9pm daily</p>
+            <p class="phone-hours top-corner-text hours-text-1">
+              Open 7am-9pm daily
+            </p>
+            <p class="phone-hours top-corner-text hours-text-2">
+              7am-9pm daily
+            </p>
           </div>
         </div>
         <div class="call-outer-box">
@@ -150,18 +161,24 @@
               stroke-width="16"
             ></path>
           </svg>
-          <a href="tel:815-997-7707" class="phone">815-997-7707</a>
+          <a href="tel:815-997-7707" class="phone top-corner-text"
+            >815-997-7707</a
+          >
         </div>
       </div>
-    </div>
-    <div class="skinnybar">
+    </header>
+    <header class="skinnybar">
       <p class="veteran">Veteran Owned and Operated</p>
       <p class="isa">ISA Certified Arborist</p>
       <p class="licensed">Licensed and Insured</p>
-    </div>
-    <h1 class="history-main-title">You're Doing Business with Family</h1>
+    </header>
+    <h1 class="about-title">You're Doing Business with Family</h1>
     <p class="about-sub-title">but we think that's alright!</p>
-    <img src="/images/family.jpg" class="family-image" />
+    <img
+      src="/images/about/family.jpg"
+      class="family-image"
+      alt="Rook family photo"
+    />
 
     <div class="family-blurb-box">
       <div class="family-blurb">
@@ -176,7 +193,7 @@
     <div class="flex-ed-details">
       <div class="ed-details-box">
         <img
-          src="images/ed.jpg"
+          src="images/about/ed.jpg"
           title="Edward Rook"
           alt="owner-pic"
           class="ed-img"
@@ -193,7 +210,7 @@
           <p>US Army Combat Veteran - OEF</p>
 
           <img
-            src="images/cert_arb.jpg"
+            src="images/about/cert_arb.jpg"
             alt="ISA Member"
             title="International Society of Arboriculture"
             class="isa-arborist"
@@ -205,26 +222,26 @@
 
     <div class="headquarters-box">
       <h4>Headquarters at State Rt. 20 and Grove Rd.</h4>
-      <img src="images/headquarters.jpg" alt="Headquarters-Img" />
+      <img src="images/about/headquarters.jpg" alt="Headquarters-Img" />
       <div class="headquarters-text">
         <p>17031 W State Rd Pecatonica, IL 61063</p>
       </div>
     </div>
 
-    <div class="page-footer">
+    <footer class="page-footer">
       <img
         class="footer-img-1"
-        src="images/winter.trees.jpg"
+        src="images/header.footer/winter.trees.jpg"
         alt="winter trees in Northern Illinois"
       />
       <img
         class="footer-img-2"
-        src="images/winter.trees.2.jpg"
+        src="images/header.footer/winter.trees.2.jpg"
         alt="winter trees in Northern Illinois"
       />
       <a class="footer-logo-box" href="index.html">
         <img
-          src="images/logo.png"
+          src="images/header.footer/logo.png"
           alt="Easy Eddy's Tree Service Logo"
           class="footer-logo"
         />
@@ -241,6 +258,6 @@
           >easyeddys@outlook.com</a
         >
       </nav>
-    </div>
+    </footer>
   </body>
 </html>
