@@ -7,33 +7,40 @@
 
     <link href="styles/about.css" rel="stylesheet" type="text/css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script defer src="js/script.js"></script>
+
     <title>About Us</title>
   </head>
 
   <body>
     <header class="page-header">
-      <a href="index.html" class="menu-logo"
-        ><img
+      <a href="index.html" class="menu-logo">
+				<img
           src="images/header.footer/logo.png"
-          alt="Easy Eddy's Tree Service Logo"
-      /></a>
+          alt="Easy Eddy's Tree Service Logo"/>
+			</a>
 
-      <nav class="menu">
+   	 <nav class="menu">
         <ul class="menu-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="history.html">Our History</a></li>
-          <li><a href="about-us.html" title="About Us">About Us</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="history.html" class="nav-link">Our History</a></li>
+           <li><a href="about-us.html"  class="nav-link"title="About Us">About Us</a></li>
         </ul>
-      </nav>
-      <div class="menu-btn">
+    	</nav>
+			
+      <button class="menu-btn">
         <svg
+				
           class="icon-mobile-nav"
-          title="menu-outline"
+          name="menu-outline"
           xmlns="http://www.w3.org/2000/svg"
           width="192"
           height="192"
@@ -74,7 +81,7 @@
         </svg>
         <svg
           class="icon-mobile-nav"
-          title="close-outline"
+          name="close-outline"
           xmlns="http://www.w3.org/2000/svg"
           width="192"
           height="192"
@@ -103,7 +110,8 @@
             stroke-width="16"
           ></line>
         </svg>
-      </div>
+      </button>
+
       <div class="top-corner">
         <div class="hours-box">
           <div class="hours-outer-box">
