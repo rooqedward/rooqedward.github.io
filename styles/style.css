@@ -3,15 +3,18 @@
   padding: 0;
 }
 
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 html {
   font-family: "Fira Sans";
   font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 p {
@@ -23,8 +26,9 @@ p {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr;
-  min-height: 11.5rem;
+  /* min-height: 11.5rem; */
   gap: 2rem;
+  position: relative;
 }
 
 .menu-logo {
@@ -39,10 +43,8 @@ p {
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
   grid-column: 2 / 4;
+  align-self: center;
 }
 
 .menu a {
@@ -50,15 +52,20 @@ p {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: rgb(23, 23, 23);
-  flex: 0 1 auto;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-btn {
   border: none;
   background: none;
-  align-self: center;
   /* cursor: pointer; */
   display: none;
+  align-self: center;
 }
 
 .icon-mobile-nav {
@@ -101,6 +108,14 @@ p {
   font-size: 1.8rem;
   color: rgb(25, 25, 25);
   padding-right: 1rem;
+}
+
+.hours-text-1 {
+  display: block;
+}
+
+.hours-text-2 {
+  display: none;
 }
 
 .call-outer-box {
@@ -310,8 +325,7 @@ p {
   background-image: linear-gradient(to bottom, #36b236 50%, #fe7102 50%);
   background-size: 100% 200%;
   border-radius: 5px;
-  transition: all 0.2s;
-
+  /* transition: all 0.2s; */
   /* border-radius: 5px; */
   text-align: center;
 }
@@ -337,7 +351,8 @@ p {
   margin-left: 2rem;
 }
 
-.reviews {
+.reviews:link,
+.reviews:visited {
   background-image: linear-gradient(
     to bottom,
     #36b236 50%,
@@ -372,8 +387,6 @@ p {
 }
 
 .felling-header-box {
-  /* width: fit-content; */
-  width: fit-content;
   border: 1px solid black;
   background-color: white;
   padding: 1rem;
@@ -456,6 +469,7 @@ p {
   font-size: 3rem;
   color: #555;
   margin-top: 3rem;
+  text-decoration: underline;
 }
 
 .vid-parent {
@@ -559,7 +573,7 @@ h2 {
 }
 
 h3 {
-  text-align: center;
+  /* text-align: center; */
   font-family: Fira Sans;
   font-size: 4rem;
   margin-bottom: -3rem;
@@ -572,9 +586,25 @@ a {
   text-decoration: none;
 }
 
+.history-main-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  padding: 4rem 0.5rem 2rem 0.5rem;
+  color: #0b900b;
+}
+
 /* *************************************
             ABOUT US PAGE
 ***************************************/
+
+.about-title {
+text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  padding: 4rem 0.5rem 2rem 0.5rem;
+  color: #0b900b;
+}
 
 .family-image {
   width: 100%;
@@ -593,9 +623,7 @@ a {
 }
 
 .family-blurb {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  line-height: 3.5rem;
-  letter-spacing: 1px;
+ 
   margin: -3rem auto 0 auto;
   padding: 2rem 4rem;
   border: 2px solid black;
@@ -604,7 +632,11 @@ a {
 }
 
 .family-blurb p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  
 }
 
 .family-blurb p:nth-child(2) {
@@ -628,7 +660,7 @@ a {
 .ed-img {
   width: 40rem;
   height: auto;
-  border-radius: 5rem;
+
 }
 
 .my-info-text {
@@ -667,8 +699,7 @@ a {
   font-weight: bold;
 }
 
-.headquarters-box.p,
-.headquarters-box.h4 {
+.headquarters-box p, h4 {
   text-align: center;
 }
 

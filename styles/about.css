@@ -1,0 +1,117 @@
+/* smaller than 768 pixels */
+
+@media (max-width: 49em) {
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-sub-title {
+    font-size: 2.2rem;
+  }
+
+  .family-blurb {
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin: -3rem auto 0 auto;
+    padding: 1rem 2rem;
+    width: 80%;
+  }
+
+  .family-blurb p {
+    font-size: 1.8rem;
+  }
+
+  .ed-details-box {
+    gap: 2rem;
+  }
+
+  .ed-img {
+    max-height: 20rem;
+    width: auto;
+  }
+
+  .isa-arborist {
+    width: 5rem;
+    height: auto;
+  }
+
+  .my-info-text {
+    gap: 0.6rem;
+  }
+
+  .my-info-text p {
+    margin: 0;
+  }
+
+  .headquarters-box h4, p {
+    font-size: 1.6rem;
+  }
+}
+
+/* smaller than 560px */
+
+@media (max-width: 35em) {
+
+  .family-blurb-box {
+    width: 100%;
+  }
+  .family-blurb {
+    width: 80%;
+    margin: 3rem auto;
+  }
+
+  .family-blurb p {
+    letter-spacing: .5px;
+    font-size: 1.6rem;
+  }
+
+  .ed-details-box {
+    display: grid;
+  }
+
+  .my-info-text p {
+    font-size: 1.6rem;
+  }
+
+  .headquarters-box {
+    margin: 6rem 2rem 0 2rem;
+  }
+
+  .headquarters-box h4, p {
+    font-size: 1.4rem;
+  }
+}
+
+/* smaller than 480px */
+@media (max-width: 30em){
+
+.about-title {
+  font-size: 2.2rem;
+  padding: 1.5rem .5rem 1rem .5rem;
+}
+
+.about-sub-title {
+  font-size: 1.8rem;
+} 
+  
+}
+
+/* *****************
+      below 345px
+********************** */
+
+@media(max-width: 22em) {
+
+  .family-blurb {
+    padding: .4rem;
+  }
+
+  .headquarters-box {
+    border: none;
+    margin: none;
+  }
+
+  .headquarters-box img {
+    width: 100%;
+  }
+}

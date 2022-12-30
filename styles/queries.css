@@ -5,6 +5,10 @@
     grid-column: 2 / 5;
   }
 
+  .skinnybar p {
+    font-size: 1.6rem;
+  }
+
   .call-button-box {
     margin-top: 1.8rem;
   }
@@ -129,7 +133,7 @@
     margin: 2rem 0;
     width: 75%;
     justify-self: center;
-    line-height: 2;
+    /* line-height: 2; */
   }
 
   .section-3-img-2 {
@@ -143,7 +147,7 @@
     margin: 2rem 0 8rem 0;
     width: 75%;
     justify-self: center;
-    line-height: 2;
+    /* line-height: 2; */
   }
 
   .climb-text-container p {
@@ -189,6 +193,10 @@
 /* smaller than 768 pixels */
 
 @media (max-width: 49em) {
+  /*************************
+      MOBILE NAVIGATION
+  ************************* */
+
   .menu-btn {
     display: block;
   }
@@ -207,6 +215,11 @@
     grid-column: -1 / -2;
   }
 
+  .description-1 {
+    font-size: 3rem;
+    top: 15rem;
+  }
+
   .menu {
     background-color: rgb(189, 189, 189);
     position: absolute;
@@ -214,15 +227,16 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    grid-column: 1 / -1;
+    /* flex-direction: column; */
     transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: all 0.5s ease-in;
     pointer-events: none;
     visibility: hidden;
-    align-items: center;
-    justify-content: center;
     z-index: 1;
   }
 
@@ -241,18 +255,44 @@
     display: none;
   }
 
+  .menu-list {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .menu-list a:link,
+  .menu-list a:visited {
+    font-size: 4rem;
+  }
+
+  .skinnybar p {
+    font-size: 1.2rem;
+  }
+
   .call-assessment:link,
   .call-assessment:visited {
     font-size: 1.6rem;
     letter-spacing: 1px;
-    padding: 0.5rem 1rem;
+    padding: none;
     background-color: #36b236;
-    transition: all 0s;
+    /* transition: all 0s; */
+    background-image: none;
   }
 
   .call-assessment:hover,
   .call-assessment:visited .climb-text-container {
     background-color: #fe7102;
+  }
+
+  .reviews:link,
+  .reviews:visited {
+    background-image: none;
+    background-color: #36b236;
+    transition: none;
+  }
+
+  .reviews:active {
+    background-color: rgba(1, 128, 255, 0.89);
   }
 
   .felling-header-box {
@@ -303,6 +343,11 @@
 
   .description-1 {
     font-size: 2.8rem;
+    top: 18rem;
+  }
+
+  .section-2-container {
+    margin: 6rem auto 0 auto;
   }
 
   .firewood-img {
@@ -316,6 +361,10 @@
 
   .firewood-text-box h2 {
     margin-bottom: 1rem;
+  }
+
+  .section-3 {
+    margin-top: 6rem;
   }
 
   .felling-main-text {
@@ -399,17 +448,44 @@
   }
 }
 
-/* smaller than 425px */
-@media (max-width: 29em) {
-  .menu-logo-img {
+/* smaller than 480px */
+@media (max-width: 30em) {
+  .page-header {
+    gap: 0.6rem;
+    min-height: none;
+  }
+
+  .hours-text-1 {
+    display: none;
+  }
+
+  .hours-text-2 {
+    display: block;
+  }
+
+  .menu-logo img {
     width: 10rem;
   }
   .top-corner-mobile {
     font-size: 1.6rem;
   }
 
-  .call-outer-box {
-    padding: 0 1rem 0 0;
+  .top-corner-text {
+    font-size: 1.4rem !important;
+  }
+
+  .clock-icon,
+  .phone-icon {
+    height: 2rem;
+  }
+
+  .description-1 {
+    font-size: 2;
+  }
+
+  .call-assessment:link,
+  .call-assessment:active {
+    line-height: normal;
   }
 
   .felling-main-text {
@@ -427,5 +503,27 @@
 
   .section-4 {
     margin-top: 7rem;
+  }
+
+  .footer-logo {
+    width: 50%;
+    align-self: center;
+  }
+  .footer-logo-box {
+    display: block;
+    align-self: center;
+    
+  }
+}
+
+/* *****************
+      below 345px
+********************** */
+
+@media(max-width: 22em) {
+
+  .description-1 {
+    top: 16rem;
+    font-size: 2rem;
   }
 }
